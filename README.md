@@ -9,23 +9,20 @@
 - Max Willian Trajano
 
 ## Descrição do Projeto
-Este projeto tem como objetivo criar um sistema de marketplace para venda de componentes e periféricos para lojistas registrados. O sistema será projetado para que os lojistas tenham acesso aos produtos apenas após passarem por um processo de pré-registro e terem sua inscrição aprovada.
+O sistema irá gerenciar a compra de componentes e periféricos para lojistas registrados.
 
 
 ## Objetivo do Projeto
-O objetivo deste projeto é fornecer uma plataforma segura para que lojistas possam comprar seus produtos de forma facilitada em um ambiente limpo e agradável, para revenderem suas lojas posteriormente.
+O objetivo deste projeto é fornecer uma plataforma segura para que lojistas possam comprar seus produtos de forma facilitada em um ambiente limpo e agradável, para revenderem em suas suas lojas posteriormente.
 
 ## Estrutura do Projeto
-- Tela de Login
-- Tela de Boas vindas (Home)
+- Tela de Login de Lojistas
+- Tela de cadastro de Lojistas
+- Tela de Boas vindas
 - Tela de visualização Produtos
-- Tela de cadastro de produtos
-- Tela de edição de produtos
-- Tela Sobre
-- Tela de SAC
 
 ## Cliente ou Público Alvo do Sistema
-O sistema será voltado para lojistas que desejam comprar produtos online em formato de atacado.
+O sistema será voltado para lojistas que desejam comprar produtos online em formato de atacado de forma facil e ágil.
 
 ## Tecnologias Utilizadas no Projeto
 - HTML

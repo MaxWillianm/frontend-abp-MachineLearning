@@ -6,7 +6,8 @@ import '@radix-ui/themes/styles.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/home.jsx';
 import Produtos from './routes/Produtos';
-import Login from './routes/login.jsx';;
+import AdicionaProduto from './routes/adiciona_produto.jsx';
+import Login from './routes/login.jsx';
 import Cadastro from './routes/cadastro.jsx';
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path:"/produtos",
         element:<Produtos/>
+      },
+      {
+        path:"/produtos/add",
+        element:<AdicionaProduto/>
       },
       {
         path:"/login",

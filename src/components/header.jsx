@@ -10,6 +10,7 @@ export default function Header() {
             <Link to={'/'}><img src="../../public/svg/logo.svg" alt="" className="w-24 h-24" /></Link>
               <Link className="text-white" to="/" >Home</Link>
               <Link className="text-white" to="/produtos" >Produtos</Link>
+              <Link className="text-white" to="/produtos/add" >Adiciona produtos</Link>
             </div>
             <div className="space-x-5">
               <Link className="text-white p-5 bg-blue-high rounded-lg transition-all hover:bg-blue-light" to="/login" >Login</Link>

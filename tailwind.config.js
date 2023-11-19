@@ -25,6 +25,7 @@ export const theme = {
       'black': {
         DEFAULT: '#000000',
         'div': '#18191B',
+        'input': '#464646',
       },
       'blue': {
         DEFAULT: '#1DA1F2',

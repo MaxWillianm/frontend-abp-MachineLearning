@@ -5,4 +5,5 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  @apply bg-[url("../public/svg/background.svg")] bg-fixed bg-cover bg-no-repeat bg-center;
 }

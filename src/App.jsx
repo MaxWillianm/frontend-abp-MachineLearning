@@ -7,7 +7,7 @@ export function App() {
 
   return (
   <>
-    <div className="bg-[url('../public/svg/background.svg')] bg-fixed bg-cover h-[100rem]">
+    <div>
       <Header />
       <Outlet />
       <Footer />

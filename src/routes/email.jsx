@@ -1,19 +1,22 @@
 import { useState } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 function Email() {
-  const [email, setEmail] = useState([]);
+  const [email, setEmail] = useState([
+    'email', ''
+  ]);
   const [carregando, setCarregando] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const url = '';
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     setCarregando(true);
     try {
-      // const data = JSON.stringify(email);
-      // const response = await axios.post('', data, {});
-      // console.log(response.data);
-      // setIsFormSubmitted(true);
+      const data = JSON.stringify(email);
+      const response = await axios.post(url, data, {});
+      console.log(response.data);
+      setIsFormSubmitted(true);
     }
     catch (error) {
       console.error(error);
@@ -34,7 +37,7 @@ function Email() {
           <button className='text-white flex w-1/4 mx-auto justify-center items-center bg-blue-high rounded p-5 transition-all hover:bg-blue-light' type="submit" disabled={carregando}>
             {carregando ? <img src="../../public/svg/loading_white.svg" className='w-9 h-9' /> : 'Enviar'}
           </button>
-          {isFormSubmitted && <p className='text-white'>Formulário enviado com sucesso!</p>}
+          {isFormSubmitted && <p className='text-white'>Enviado!</p>}
         </form>
       </div>
     </div>

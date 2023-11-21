@@ -2,14 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import '@radix-ui/themes/styles.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/home.jsx';
-import Produtos from './routes/Produtos';
-import AdicionaProduto from './routes/adiciona_produto.jsx';
-import Login from './routes/login.jsx';
-import Cadastro from './routes/cadastro.jsx';
-import View from './routes/view.jsx';
+import Email from './routes/email.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,26 +16,9 @@ const router = createBrowserRouter([
         element:<Home/>
       },
       {
-        path:"/produtos",
-        element:<Produtos/>
+        path:"/email",
+        element:<Email/>
       },
-      {
-        path:"/produtos/add",
-        element:<AdicionaProduto/>
-      },
-      {
-        path:"/login",
-        element:<Login/>
-      },
-      {
-        path:"/cadastro",
-        element:<Cadastro/>
-      },
-      {
-        path:"/view",
-        element:<View/>
-
-      }
     ]
   }
 ]);

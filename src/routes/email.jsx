@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import Loading from '../../public/svg/loading';
 
 function Email() {
   const [email, setEmail] = useState('');
@@ -33,8 +34,8 @@ function Email() {
       <div className="bg-black-div/90 border border-white rounded-xl  my-20 py-12 px-8">
         <form id='formProduto' className='flex flex-col space-y-12' onSubmit={handleSubmit}>
           <textarea className='bg-black-input text-white rounded px-4 py-3' placeholder='Corpo do email' type="text" value={email} onChange={handleChange} />
-          <button className='text-white flex w-1/4 mx-auto justify-center items-center bg-blue-high rounded p-5 transition-all hover:bg-blue-light' type="submit" disabled={carregando}>
-            {carregando ? <img src="../../public/svg/loading_white.svg" className='w-9 h-9' /> : 'Enviar'}
+          <button className='text-white flex w-1/4 mx-auto text-lg uppercase justify-center items-center bg-blue-high rounded p-8 transition-all hover:bg-blue-light' type="submit" disabled={carregando}>
+            {carregando ? <Loading className="w-10 h-auto" /> : 'Enviar'}
           </button>
           {isFormSubmitted && (
             <div>
